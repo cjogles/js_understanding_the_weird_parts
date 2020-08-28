@@ -160,7 +160,19 @@ THe Scope Chain:
 
     
 Scope, ES6, and let:
-    - 
+    - Scope is where a variable is available in your 
+      code. And its about whether or not the variable
+      is truly the same variable, or if its just a 
+      new copy. 
+    - let variable instantiation will declare a variable 
+      with block scoping. declare it the same as var, 
+      but during the execution phase, its still set in 
+      memory and set it undefined. However you now allowed
+      to use it until the line of code is run during 
+      the execution phase that actually declares the 
+      variable. The engine won't allow it. 
+    - When the variable is declared in a block, its only
+      available inside that block. let does that. 
 
 Asynchronous Callbacks:
     - 
