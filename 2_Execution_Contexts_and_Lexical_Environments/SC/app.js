@@ -77,23 +77,51 @@
 
 // VARIABLE ENVIRONMENT EXAMPLE 1
 // ----------------------------------
-function b() {  
-    var myVar;
-    console.log(myVar)
-}
+// function b() {  
+//     var myVar;
+//     console.log(myVar)
+// }
 
-function a() {
-    var myVar = 2;
-    console.log(myVar)
-    b();
-}
+// function a() {
+//     var myVar = 2;
+//     console.log(myVar)
+//     b();
+// }
 
-var myVar = 1;
-console.log(myVar)
-a();
+// var myVar = 1;
+// console.log(myVar)
+// a();
 // ----------------------------------
 
 // First the global execution context is created. the global object is in 
 // the variable environment of the global space. then function a's execution
 // context has its own myVar, and so on with b(). Even though myVar is 
 // declared 3 times, they are unqiue. 
+
+// ASYNC EXAMPLE EXAMPLE 1
+// ----------------------------------
+function waitThreeSeconds() {  
+    var ms = 3000 + new Date().getTime();
+    while (new Date() < ms){}
+    console.log('finished function');
+}
+
+function clickHandler() {
+    console.log('click event!');
+}
+
+// listen for the click event
+document.addEventListener('click', clickHandler);
+
+waitThreeSeconds();
+console.log('finished execution');
+// ----------------------------------
+
+// This function simulates an action that takes a long 
+// time (3 seconds). the first function will take 3 secs
+// to finish running, then it will print. the second function
+// will be the function to run when a click event is looked 
+// at by the JS engine. So line 114 will "LISTEN" for 
+// a click event by adding a click to the event queue, 
+// and will pass the clickHandler function as an execution
+// context after the execution stack is empty. 

@@ -175,5 +175,33 @@ Scope, ES6, and let:
       available inside that block. let does that. 
 
 Asynchronous Callbacks:
-    - 
+    - asynchronous means "MORE THEN ONE AT A TIME"
+    - click events, getting data, call back functions
+      will do things when events are complete. How 
+      does JS handle those async events?
+    - The JS engine itself doesn't exist by itself. 
+      there are other elements or other engines that
+      run in the browser
+      like the "RENDERING ENGINE" the "HTTP 
+      REQUEST ENGINE" etc. 
+      the JS engine has hooks to talk to 
+      these other pieces. Whats happening inside 
+      JUST the JS engine is synchronous. While the 
+      other peices are doing work in the browser.
+    - In the JS engine there is another list called 
+      the "EVENT QUEUE". 
+      When an event occurs, like a mouse click, the 
+      event is placed in the queue.
+      The even queue gets looked at when the execution 
+      stack is empty. the JS engine waits for something
+      to be there. IF something is there, it looks 
+      to see if a particular function should be run 
+      when that event is triggered. if so, it creates 
+      an execution context for that function and the 
+      event is dequeued off the event queue. 
+    - The JS engine will continually check the event 
+      queue for more events as the execution stack 
+      empties. This is why we call the event queue 
+      listening stuff the event loop.
+    - See ASYNC EXAMPLE 1 for more notes. in app.js.
 
