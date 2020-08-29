@@ -1,0 +1,27 @@
+Types and Operators
+    - 
+    
+Primitive Types
+    - 
+
+Operators
+    - 
+
+Operator Precedence and Associativity
+    - 
+
+Coercion
+    - 
+
+Comparison Operators
+    - 
+
+Existence and Booleans
+    - 
+
+Default Values
+    - 
+
+Framework Aside:
+Default Values:
+    - 
