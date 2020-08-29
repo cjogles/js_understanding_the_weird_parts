@@ -134,6 +134,10 @@ Functions, Context, and Variable Environments:
       to each other in memory. 
 
 THe Scope Chain:
+    - Where a function sits determines its link to outer 
+      environment. Its lexical environment determines 
+      its outer environment and how the scope chain is 
+      made. 
     - The scope is all about defining where a variable is available. 
     - The scope chain is the places we can continually look until 
       we reach the end (i.e. global execution context)
@@ -148,6 +152,12 @@ THe Scope Chain:
       standing. If the current execution context (i.e. function) sits above
       the global enviornment. then THAT is where the outer enviornemnt lives.
       it will look there next then be done looking. 
+    - looking at where functions sit lexically is a 
+      really easy way to check where on the scope 
+      chain the variables called will be found. 
+    - Another way to think abou this is to ask the 
+      question "Who created me?" Which execution context?
+
     
 Scope, ES6, and let:
     - 
