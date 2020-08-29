@@ -1,0 +1,157 @@
+Execution Context and Lexical Environments
+
+Conceptual Aside:
+Understanding Syntax Parsers, Execution Contexts,
+and Lexical Environments:
+    - These are fundamental ideas to Understanding
+      more about JS. These ideas will come up often
+      throughout the course. 
+    - First: Syntax Parser:
+      A program that reads your code, determines
+      what it does, and determines if its valid.
+      My code isn't magic. Someone else wrote
+      a program to translate it for the computer.
+      An example would be a compiler or at times 
+      an interpreter. It converts JS into a set
+      of computer instructions that the CPU can 
+      process and use and understand. Part of that
+      is a syntax parser. The compiler can even 
+      choose to do extra stuff to your code. 
+    - Second: Lexical Environment:
+      This is WHERE something sits physically in 
+      the code you write. Lexical means having
+      to do with words or grammar. So where you
+      write something is IMPORTANT. Where you see 
+      things written gives us an idea where 
+      the compiler will send things to computer 
+      memory. The syntax parser will make decisions 
+      based on the lexical environment of code.
+    - Third: Execution Context:
+      A wrapper that helps manage the code that is 
+      running. The code that is currently running 
+      is managed via execution contexts. It can 
+      contain things beyond what you've written. 
+
+Conceptual Aside:
+Understand Name/Value Pairs and Objects:
+    - Name/Value Pair is a name which MAPS to 
+      a unique value. That name may be defined 
+      more then once, but it can only have one 
+      value in any given execution context. That 
+      value MAY be more Name/Value pairs or other
+      collections. 
+    - An Object in JS is a collection of Name/Value 
+      Pairs. This is the simplist definition. Don't 
+      try to make it any more complex then that. It's 
+      not. 
+
+The Global Environment and The Global Object:
+    - Whenever code is ran in JS, its ran inside 
+      a execution context. Meaning the JS engine 
+      wraps the code in a meaningful context. 
+      The BASE execution context is the GLOBAL 
+      execution context. Global means its accessible 
+      to everything and everywhere in your code. 
+      It does 2 things for you. It creats a 
+      GLOBAL OBJECT (think name value pair) and 
+      creates a special variable called "this". 
+      These are created for you by the JS engine. 
+    - When running JS in a browser,
+      an execution context is created and "this" is 
+      created. Its the GLOBAL OBJECT. There is 
+      always a global object. It varies depending 
+      on where your running the JS. 
+      The this variable will point to the WINDOW. 
+      Meaning the window/tab in the browser. 
+      Thats the locus of control for JS in web 
+      developement in the browser. 
+    - At the global level, 'this' and 'window' refer 
+      to the same thing. Global just means 'not 
+      inside a function'. 
+    - When I create variables and functions in the 
+      global execution context, those vars and fns 
+      get attached to the Global Object. 
+    - When code is executed an execution context 
+      is created. In the browser your global object 
+      is the window object. You also have a LINK 
+      TO THE OUTER ENVIRONMENT if your in a functions 
+      execution context. The execution context 
+      will be running your code. 
+    - the JS engine is doing this for me. I don't write 
+      the this keyword or create this execution 
+      context. 
+
+The Execution Context - Creation and Hoisting:
+    - What does the JS engine do to create an 
+      execution context? 
+    - All variables in JS are initially set to undefined. 
+    - Best always to define your functions and variables first.
+      that way its less confusing. 
+    - See app.js in starter folder to see how JS engine
+      sets up memory space for variables and functions, 
+      and how that == hoisting. Plus more notes.
+
+Conceptual Aside:
+Understanding JS and "undefined":
+    - undefined is not a string. Its actually a special variable that
+      means a variable that hasn't been set yet. Or hasn't been 
+      defined yet. DUH.
+    - also a little sneak peak into the === being a bit safer then 
+      == . didn't explain why yet though. 
+    - never set a variable to undefined yourself. It's better
+      to let it mean "i the programmer never defined the variable. 
+      it will help me in debugging. 
+
+The Execution Context - Code Execution:
+    - The second phase of the execution context is code execution.
+    - The first phase we've discussed. 
+    - the second phase now runs the code line by line. executing it on 
+      the computer into something it can understand. 
+
+Conceptual Aside:
+Understanding Single Threaded and Synchronous Execution
+    - First: Single Threaded:
+      This means "ONE COMMAND AT A TIME"
+      Under the hood of the browser, maybe not...
+      JS is not the only thing happening in the browser. 
+      From our perspective as programmers, JS behaves 
+      in a singly threaded manner.
+    - Second: Synchronous:
+      This means "ONE AT A TIME IN ORDER"
+      In JS one thing is happening at a time. 
+      we'll talk about async things in a bit. 
+
+Function Invocation and the Execution Stack:
+    - Invocation just means "RUNNING A FUNCTION" or 
+      "CALLING A FUNCTION" in JS we use parenthesis () 
+      to do this.
+    - When we invoke a function in JS special things happen. 
+      see function invocation example 1 in app.js for more
+    - functions are run synchronously line by line and popped off stack. 
+
+Functions, Context, and Variable Environments:
+    - Variable Environment just mean where variables live and relate
+      to each other in memory. 
+
+THe Scope Chain:
+    - The scope is all about defining where a variable is available. 
+    - The scope chain is the places we can continually look until 
+      we reach the end (i.e. global execution context)
+    - Now that I know about the execution stack, execution context, etc.
+      this should be easier to understand. 
+    - When a function is ran and it attempts to use a variable that 
+      is not defined there at all, then JS does more then just 
+      look in the variable environment of the current execution context. 
+      The JS engine will use the reference to the outer environment to 
+      try and find it. The way the JS engine determines the outer scope is 
+      by looking at the current execution contexts lexical enviornmental 
+      standing. If the current execution context (i.e. function) sits above
+      the global enviornment. then THAT is where the outer enviornemnt lives.
+      it will look there next then be done looking. 
+    
+Scope, ES6, and let:
+    - 
+
+Asynchronous Callbacks:
+    - 
+

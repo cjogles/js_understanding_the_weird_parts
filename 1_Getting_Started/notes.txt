@@ -1,0 +1,34 @@
+Getting Started - Goals of this course
+
+Philosophy:
+    - Don't imitate. Understand.
+
+Setup Needs:
+    - Internet Browser with dev tools 
+      (I'll use chrome)
+    - Text editor (i'll us VS Code)
+
+Big Words and JS:
+    - JS has a tendency to use words that 
+      seem bigger and more
+      complex then they really are. To combat this,
+      We will do "Big Word Alerts" to talk about 
+      their definitions and how they are used in 
+      detail. Its just vocabulary.
+
+Understanding, Frameworks, and the Weird Parts:
+    - JS is abstracting you away from how the 
+      computer or browser or server works. We 
+      need to understand how the tool is working.
+    - We are going beyond the basics. It will be 
+      useful to build robust and good JS apps. 
+    - Frameworks like angular, jquery, react 
+      and others just use JS under the hood. 
+      So learn it and look at the source Code
+      to understand. 
+    - JS is very different under the hood from 
+      mainstream programming langauges. Even though
+      it may look similar. We are going to learn
+      the hows and whys. Also JS has downsides
+      and upsides. We will learn this. 
+
