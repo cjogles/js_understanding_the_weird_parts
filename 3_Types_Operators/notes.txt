@@ -19,10 +19,24 @@ Types and Operators
       if you don't understand. 
 
 Primitive Types
-    - 
+    - Although we don't set variable types directly, 
+      there are 6 primitive types in JS. 
+    - a primitive type is a type of data that represents
+      a single value. (i.e. not an object or name/value pair)
+      1. Undefined (represents lack of existence)
+      2. Null (represents lack of existence) better to use
+         when the programmer wants to set it up themselves. 
+      3. Boolean (true or false)
+      4. Number (floating point number only. can make math wierd)
+      5. String (sequence of chars)
+      6. Symbol (used in ES6, being constructed. wont talke about this here)
+
 
 Operators
-    - 
+    - special functions that is syntactically written
+      differently. generally take two params and return 
+      one result. 
+      
 
 Operator Precedence and Associativity
     - 
