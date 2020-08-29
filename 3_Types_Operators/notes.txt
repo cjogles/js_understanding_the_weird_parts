@@ -36,7 +36,8 @@ Operators
     - special functions that is syntactically written
       differently. generally take two params and return 
       one result. 
-      
+    - greater then or less then or equality ops return 
+      a boolean back. 
 
 Operator Precedence and Associativity
     - 
