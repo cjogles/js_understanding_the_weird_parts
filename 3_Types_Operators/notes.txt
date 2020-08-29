@@ -1,6 +1,23 @@
 Types and Operators
-    - 
-    
+    - JS is special and different when it comes to 
+      the types of data that variables hold and how 
+      JS deals with them. 
+    - DYNAMIC TYPING means that the programmer doesn't 
+      tell the engine what type of data a variable 
+      holds, it figures it out when the code is running
+      Variables can hold different types of values because
+      its all figured out during execution. 
+    - C# or Java uses STATIC TYPING. The programmer
+      would use a keyword like "bool" to show i 
+      want a boolean type, and if you set that variable
+      to a string you'll get an error. JS is 
+      DYNAMICALLY TYPED so you get no errors when you 
+      change the type. It's dynamic. You can define 
+      a variable and assign it a string value, then 
+      a bool then a number and its fine. 
+    - this is powerful and can also cause problems 
+      if you don't understand. 
+
 Primitive Types
     - 
 
