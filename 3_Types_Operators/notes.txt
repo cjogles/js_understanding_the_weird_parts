@@ -40,13 +40,43 @@ Operators
       a boolean back. 
 
 Operator Precedence and Associativity
-    - 
+    - Operator precedence just means which operator 
+      function gets called first when theirs more 
+      then one on the same line of executable code. 
+      functions are called in order of precedence. 
+      Highest order wins. and JS engine will call it.
+    - Operator Associativity just means what order 
+      an operator gets called in. Either left to right
+      associativity called left associativity, or right 
+      to left associativity called right associativity. 
+    - see operator precednence and associativity example
+      in notes. 
 
 Coercion
-    - 
+    - Just means the JS engine will convert a value 
+      from one type to another type. this happens a lot 
+      because JS is dynamically typed. 
+    - the + operator can add numbers and concatenates 
+      strings. What if I pass the + op two different 
+      types?
+    - if I pass a string and a number, then it will 
+      return a string the number was coerced. In memory
+      the number 1 and the string 1 don't look anything
+      alike. But the JS engine knows its best guess to 
+      coerce types. 
 
 Comparison Operators
-    - 
+    - see example in app.JS
+    - coercing undefined will return NaN
+    - coercing Null will return 0. 
+    - coercion, assocaitivity, and precedence 
+      really plays a role in our comparison operation
+    - but null does not equal 0... weird right? 
+      but null < 1 returns true. This is all the case 
+      with == operator. use strict equality 
+      instead. It doesn't try to coerce values. 
+    - try to compare things that are the SAME TYPE and 
+      use ===.
 
 Existence and Booleans
     - 
