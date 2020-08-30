@@ -79,10 +79,16 @@ Comparison Operators
       use ===.
 
 Existence and Booleans
-    - 
+    - see example
 
 Default Values
-    - 
+    - JS engine doesn't care if you don't pass 
+      a default value to a function. It will just 
+      return undefined. It will coerce your args 
+      to undefined. 
+    - I can use the || operator to return the first 
+      value that evals to true. Be careful about 
+      0 because that is coerced to false. 
 
 Framework Aside:
 Default Values:
