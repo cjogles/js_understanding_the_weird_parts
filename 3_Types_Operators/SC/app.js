@@ -38,8 +38,9 @@
 // run first, then the next one and so on all the way
 // to the left.
 
+// COMPARISON OP EXAMPLE
 // ----------------------------------
-console.log(3 < 2 < 1); 
+// console.log(3 < 2 < 1); 
 // ----------------------------------
 
 // the above statement will return true. 
@@ -51,3 +52,19 @@ console.log(3 < 2 < 1);
 // false into a number because that's what the 
 // less then op expects. False gets coerced to a zero
 // so zero is less then 1! Weird right?
+
+// EXISTENCE AND BOOLEAN EXAMPLE
+// ----------------------------------
+var a;
+
+// goes to internet and looks for value
+a = 'hi';
+if (a) {
+    console.log("something is there.");
+}
+// ----------------------------------
+
+// the above code will check if a evaluates to 
+// true or false. Then will return something. 
+// if a becomes 0 or undefined though, it will return
+// false.
