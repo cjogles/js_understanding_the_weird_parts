@@ -92,4 +92,9 @@ Default Values
 
 Framework Aside:
 Default Values:
-    - 
+    - How what we have learned so far is used in 
+      real life libraries and frameworks. 
+    - When we load script tags these don't create 
+      seperate execution contexts. They are all 
+      treated as one big file added to each other. 
+      
