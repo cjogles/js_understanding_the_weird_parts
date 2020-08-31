@@ -1,0 +1,28 @@
+Objects and Functions
+    - in JS objects and functions are VERY related. 
+    - objects can have properties and methods attached 
+      to them. properties include primitives like bools 
+      strings, or numbers/variables. or other objects. 
+      methods include functions. 
+
+Objects and the dot operator:
+    - you can use the dot operator to 
+      traverse objects or you could use 
+      the COMPUTED MEMBER ACCESS OPERATOR 
+      just means the [] to do the same thing.
+
+Objects and Object Literals:
+    - often there is more then one way to do something.
+    - you can use {} to do "new Object();" 
+    - that's called an object literal. 
+
+Framework Aside:
+    - Faking Namespaces
+    - Namespace is a container for variables and functions. 
+    - typically used to keep variables and functions 
+      with the same name separate. 
+    - JS since it uses objects under the hood we can 
+      fake namespaces. 
+    - You will need to create all the layers in the object
+      first before you add values or else you'll get 
+      undefined error. 
