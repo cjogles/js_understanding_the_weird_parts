@@ -78,6 +78,8 @@ Function Statements and Function Expressions:
       it resolves to a value. 
 
 By VALUE vs By REFERENCE:
+    - all primitive types are by value, 
+      all objects are by reference (can be mutated)
     - in both cases we are talking about variables.
     - lets say variable A has an address 0x001
     - lets say we run ==> b = a 
@@ -92,5 +94,22 @@ By VALUE vs By REFERENCE:
     - PRIMITIVES WORK BY VALUE
     - mutate just means to change something. 
       immutable just means something can't be changed.
-      
+    - by reference will mutate a value. 
+    - = operator will set up new memory space. 
+      or a new address. The = operator will set up 
+      a brand new memory space. 
+
+Objects, Functions, and THIS keyword
+    - 'this' will be pointing at a different object 
+      or thing depending on how the function is invoked. 
+      When 'this' is created during the creation phase 
+      of an execution context. 
+    - no programming language is perfect. The 'this'
+      keyword jumping straight to the global object 
+      past a method of an object is weird. But we can 
+      use a pattern of defining a variable as this to 
+      fight this. 
+
+Collections of Anything - Arrays:
+    - 
     
