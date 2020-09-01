@@ -114,5 +114,17 @@ Collections of Anything - Arrays:
     - new Array(), or array literal using [] to define and delimit elements in array.
     - JS can hold different types in an array. 
 
+Arguments
+    - current code you'll see the arguments variable. 
+    - in an execution env you'll see 'this', var env, 
+      outer env, and 'arguments' which holds a list of all values
+      of all params that you pass to a function your calling.
+    - arguments are parameters you pass to a function. 
+    - arguments act like an array, but its not. Its like 
+      an array. So be careful. 
+    - argumetns will soon be deprecated. soon 
+      the SPREAD operator will be the thing to use. its 
+      used using a series of three dots ...
+
 
     

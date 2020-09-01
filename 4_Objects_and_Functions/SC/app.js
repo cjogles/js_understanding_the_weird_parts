@@ -44,37 +44,37 @@
 // THIS keyword examples
 
 // ----------------------------------------
-function a() {         // function statement
-    console.log(this);
-}
+// function a() {         // function statement
+//     console.log(this);
+// }
 
-var b = function () { // function expression here
-    console.log(this); // because it results in value
-}
+// var b = function () { // function expression here
+//     console.log(this); // because it results in value
+// }
 
-a();
-b();
+// a();
+// b();
 
-var c = {
-    name: 'The c object',
-    log: function(){
-        var self = this; // set equal to by reference
-                        // same location in memory
-            // this is because its inside a method of 
-            // an object! Remember that. only one level 
-            // deep. 
-        self.name = 'Updated c object';
-        console.log(self);
+// var c = {
+//     name: 'The c object',
+//     log: function(){
+//         var self = this; // set equal to by reference
+//                         // same location in memory
+//             // this is because its inside a method of 
+//             // an object! Remember that. only one level 
+//             // deep. 
+//         self.name = 'Updated c object';
+//         console.log(self);
 
-        var setname = function(newname){ // when its execution context was created, even though its sitting inside an object i created, its 'this' keyword will point to the global object!!! LAME. 
-            self.name = newname
-        }
-        setname("updated again! the c object") // updated global object :( 
-        console.log(self)
-    }
-}
+//         var setname = function(newname){ // when its execution context was created, even though its sitting inside an object i created, its 'this' keyword will point to the global object!!! LAME. 
+//             self.name = newname
+//         }
+//         setname("updated again! the c object") // updated global object :( 
+//         console.log(self)
+//     }
+// }
 
-c.log();
+// c.log();
 // ----------------------------------------
 
 // invoking a() will create an execution context with the 
@@ -89,3 +89,19 @@ c.log();
 // method is sitting inside of! We can update the 
 // this keyword then. 
 
+// ARGUMENTS EXAMPLES
+
+function greet(firstname, lastname, language) {
+    language = language || 'en';
+    lastname = lastname || 'Smith';
+    firstname = firstname || 'Johnny';
+    console.log(firstname);
+    console.log(lastname);
+    console.log(language);
+    console.log(arguments)
+}
+
+greet();
+greet('John');
+greet('John', 'Doe');
+greet('John', 'Doe', 'es');
