@@ -26,3 +26,71 @@ Framework Aside:
     - You will need to create all the layers in the object
       first before you add values or else you'll get 
       undefined error. 
+
+JSON and object literals:
+    - JSON is inspired by object literal syntax, but 
+      its not exactly the same thing. 
+    - in previous years, data was sent over the internet
+      in various formats. The format that was landed upon for 
+      a while was XML. When it comes to download times and 
+      bandwidth, the XML unnecessary tag names were a big wasted 
+      download bandwidth. If you dealing with a lot of data. 
+      So people looked at JS object literals and thought, 
+      hey that would be a really good way to send data! 
+    - JSON is a subset of object literal syntax. 
+    - JSON.stringify will convert the object to a JSON 
+      string. JSON.parse will take a JSON string and 
+      will convert it to a JS object. 
+    
+Functions ARE Objects:
+    - has a CODE and NAME property. 
+    - First Class Functions just means everything 
+      you can do with other data types, you can do 
+      with functions. Assign them to variables, pass 
+      them around, create them on the fly etc. 
+    - What does the function object look like? 
+      well it resides in memory like everything else, 
+      it looks like every other object, you can even 
+      attach primitives, other objects and other functions 
+      to a function since a function is an object. 
+    - The Function object has a special NAME (or can be anonymous),
+      then the CODE. The code that you write gets placed 
+      into a special property of the Function Object. So 
+      remember its an object. It has a CODE property and 
+      a Name property. What's special about the Code property
+      is that it is invocable (). 
+
+Function Statements and Function Expressions:
+    - An expression is a unit of code that results in 
+      a VALUE. That's it. It doesn't have to save a 
+      variable.
+    - Statements like an if statement, takes an expression
+      inside the () and the rest makes up a statement 
+      to make up some work. 
+    - a function statement is when you define a function
+      and it doesn't resolve into a value until its 
+      invoked and executed. It gets hoisted into memory
+      etc. 
+    - a function expression is when you assign a function 
+      to a variable. It resolved or evaluted to a function. 
+      Functions are objects right? so you can set it 
+      to a variable. Thus making it a function expression. 
+      it resolves to a value. 
+
+By VALUE vs By REFERENCE:
+    - in both cases we are talking about variables.
+    - lets say variable A has an address 0x001
+    - lets say we run ==> b = a 
+    - b would then point to a new address and make a 
+      copy of A. This approach is called BY VALUE. 
+      copying the value into two seperate spots in 
+      memory. 
+    - if we do it by reference, instead of b getting 
+      a new location in memory, two names point to 
+      the same address -> 0x001. This is by reference.
+    - ALL OBJECTS WORK BY REFERENCE. 
+    - PRIMITIVES WORK BY VALUE
+    - mutate just means to change something. 
+      immutable just means something can't be changed.
+      
+    
