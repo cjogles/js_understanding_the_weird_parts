@@ -126,5 +126,9 @@ Arguments
       the SPREAD operator will be the thing to use. its 
       used using a series of three dots ...
 
-
-    
+Function overloading:
+    - JS doesn't have this.
+    - in other languages this means you can have a function 
+      of the same name with different number of params. 
+    - so instead you can take an approach of making another 
+      function and pass the params you need. 
