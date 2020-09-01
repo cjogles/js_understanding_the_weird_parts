@@ -91,17 +91,28 @@
 
 // ARGUMENTS EXAMPLES
 
-function greet(firstname, lastname, language) {
-    language = language || 'en';
-    lastname = lastname || 'Smith';
-    firstname = firstname || 'Johnny';
-    console.log(firstname);
-    console.log(lastname);
-    console.log(language);
-    console.log(arguments)
-}
+// function greet(firstname, lastname, language) {
+//     language = language || 'en';
+//     lastname = lastname || 'Smith';
+//     firstname = firstname || 'Johnny';
+//     console.log(firstname);
+//     console.log(lastname);
+//     console.log(language);
+//     console.log(arguments)
+// }
 
-greet();
-greet('John');
-greet('John', 'Doe');
-greet('John', 'Doe', 'es');
+// greet();
+// greet('John');
+// greet('John', 'Doe');
+// greet('John', 'Doe', 'es');
+
+// AUTOMATIC SEMI COLON INSERTION DANGER
+
+// function getPerson() {
+//     return 
+//     {
+//         firstname: "Tony"
+//     }
+// }
+
+// console.log(getPerson);

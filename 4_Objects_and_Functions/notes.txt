@@ -132,3 +132,13 @@ Function overloading:
       of the same name with different number of params. 
     - so instead you can take an approach of making another 
       function and pass the params you need. 
+
+Syntax Parser:
+    - it is reading my code char by char, and can even 
+      make changes. including automatic semi-colon 
+      insertion. 
+    - if the syntax parser sees one char at a time, and 
+      it sees a carriage return (invisible char for return)
+      then it will auto insert a semi colon where it expects 
+      it. That's why its optional.... because the syntax parser 
+      does it for us. 
