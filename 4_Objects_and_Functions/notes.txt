@@ -111,5 +111,8 @@ Objects, Functions, and THIS keyword
       fight this. 
 
 Collections of Anything - Arrays:
-    - 
+    - new Array(), or array literal using [] to define and delimit elements in array.
+    - JS can hold different types in an array. 
+
+
     
