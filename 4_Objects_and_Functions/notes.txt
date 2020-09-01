@@ -142,3 +142,8 @@ Syntax Parser:
       then it will auto insert a semi colon where it expects 
       it. That's why its optional.... because the syntax parser 
       does it for us. 
+
+Whitespace:
+    - will create invisible space in code. 
+    - carriage returns, tabs, spaces etc
+    - JS is very liberal with white space. 
