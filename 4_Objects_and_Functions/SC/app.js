@@ -119,11 +119,82 @@
 
 // IIFE's examples
 
-var firstname = 'John';
-var greeting = 'Global Hi';
+// var firstname = 'John';
+// var greeting = 'Global Hi';
 
-(function(global, name) {
-    // this is inside another functions execution
-    // context. Remember it was invoked! 
-    console.log(global.greeting + ' ' + name)
-})(window, firstname);
+// (function(global, name) {
+//     // this is inside another functions execution
+//     // context. Remember it was invoked! 
+//     console.log(global.greeting + ' ' + name)
+// })(window, firstname);
+
+// CLOSURES
+
+// function greet(whattosay) {
+
+//     return function(name) {
+//         console.log(whattosay + ' ' + name);
+//     }
+
+// }
+
+// var sayHi = greet('Hi');
+
+// sayHi('Tony');
+
+// the greet function ends, and then it hangs around 
+// with the sayHi variable. The execution context 
+// is popped off the stack, but the variable would 
+// eventually be cleared out through garabage colleciton,
+// but before that the variable stays available via 
+// closures
+
+// CLOSURES PART 2
+
+// function buildFunctions() {
+
+//     var arr = [];
+
+//     for (var i = 0; i < 3; i++) {
+//         arr.push(
+//             (function(num) {
+//                 return function() {
+//                     console.log(num);
+//                 }
+//             })(i)
+//         )
+//     }
+
+//     return arr;
+// }
+
+// var fs = buildFunctions();
+// console.log(fs);
+// fs[0]();
+// fs[1]();
+// fs[2]();
+
+// each function returns all 3s! why not 1, 2, 3???
+// its because i at the time of the return is == 3. 
+// so when we invoke the inner function we get i = 3
+// each time. 
+
+// function factories:
+
+function makeGreeting(language) {
+
+    return function (firstname, lastname) {
+        if (language == "en") {
+            console.log('Hello ' + firstname + ' ' + lastname)
+        }
+        if (language == "es") {
+            console.log('Hola' + firstname + ' ' + lastname)
+        }
+    }
+
+}
+
+var greetEnglish = makeGreeting('en');
+var greetSpanish = makeGreeting('es');
+
+greetEnglish("jackson", "ogles")

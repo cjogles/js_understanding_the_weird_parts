@@ -161,3 +161,6 @@ Immeditely Invoked Function Expressions IIFE's:
     function, or outside. ITs an artistic preference. 
     no best way
 
+Closures:
+  - 
+
