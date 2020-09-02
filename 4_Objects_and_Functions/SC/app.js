@@ -116,3 +116,14 @@
 // }
 
 // console.log(getPerson);
+
+// IIFE's examples
+
+var firstname = 'John';
+var greeting = 'Global Hi';
+
+(function(global, name) {
+    // this is inside another functions execution
+    // context. Remember it was invoked! 
+    console.log(global.greeting + ' ' + name)
+})(window, firstname);

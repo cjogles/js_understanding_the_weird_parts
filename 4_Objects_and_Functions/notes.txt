@@ -147,3 +147,17 @@ Whitespace:
     - will create invisible space in code. 
     - carriage returns, tabs, spaces etc
     - JS is very liberal with white space. 
+
+Immeditely Invoked Function Expressions IIFE's:
+  - A function expression returns a value of an invoked 
+    function. You can invoke these immeditely by using 
+    the () ops right after defining it and assigning 
+    it to a variable. 
+  - if you wrap an anonymous function in parenthesis, 
+    then it will be treated as a function 
+    expression. i tricked the syntax parser 
+    You can also immeditely invoke it. you can put 
+    the () inside the other () wrapping the anonymous 
+    function, or outside. ITs an artistic preference. 
+    no best way
+
