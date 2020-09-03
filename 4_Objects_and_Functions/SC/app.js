@@ -181,20 +181,40 @@
 
 // function factories:
 
-function makeGreeting(language) {
+// function makeGreeting(language) {
 
-    return function (firstname, lastname) {
-        if (language == "en") {
-            console.log('Hello ' + firstname + ' ' + lastname)
-        }
-        if (language == "es") {
-            console.log('Hola' + firstname + ' ' + lastname)
-        }
-    }
+//     return function (firstname, lastname) {
+//         if (language == "en") {
+//             console.log('Hello ' + firstname + ' ' + lastname)
+//         }
+//         if (language == "es") {
+//             console.log('Hola' + firstname + ' ' + lastname)
+//         }
+//     }
 
-}
+// }
 
-var greetEnglish = makeGreeting('en');
-var greetSpanish = makeGreeting('es');
+// var greetEnglish = makeGreeting('en');
+// var greetSpanish = makeGreeting('es');
 
-greetEnglish("jackson", "ogles")
+// greetEnglish("jackson", "ogles")
+
+// Closures and Call backs
+
+// function sayHiLater() {
+//     var greeting = 'Hi';
+//     setTimeout(function() {
+//         console.log(greeting);
+//     }, 3000);
+// }
+
+// call(), apply(), bind()
+
+// all functions have access to these methods.
+// you would use this when you are function borrowing
+// that is when a method is not inside an object, so 
+// you borrow it with apply or call or bind. 
+// you can also use it when function currying. 
+// that is when you permanently set variables with bind
+// and create a new function with permanetnly changed 
+// copy. 
