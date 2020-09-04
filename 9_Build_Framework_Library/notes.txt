@@ -1,1 +1,15 @@
 Lets build a framework / library
+
+requirements:
+    - name! lets call it greetr. 
+    - purpose: help us give greetings. 
+    - when given a first name, last name, and optional 
+      language, it getnerates formal and informal 
+      greetings
+    - support english and spanish
+    - resuable library framework
+    - easy to type 'G$()' structure
+    - make it support jQuery. 
+
+structuring safe code:
+    - 
