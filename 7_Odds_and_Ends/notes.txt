@@ -1,1 +1,13 @@
 Odds and Ends
+
+Initialization:
+    - Don't be intimidated by prototyping data with 
+      large collections of data. 
+
+typeof() instanceof() and figuring out what something is:
+    - Object.prototype.toString.call(obj) for arrays
+    - typeof null is a bug since forever. 
+
+strictmode:
+    - "use strict"; can go top of file or function 
+      to make it a rule to define variables. 
