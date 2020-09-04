@@ -1,0 +1,17 @@
+Building Objects
+
+    - see examples in app.js
+
+Function constructor:
+    - just means its a function that is used to construct 
+      a new object. The "this" variable points to the new
+      object and is automatically returned. Use the new keyword
+      to do this. 
+
+How do we set up the protoype? 
+    - when we use the constructor it automatically 
+      sets up the prototype for you. But remember 
+      this confusing fact, the prototype of the function
+      is not the prototype of the object!__proto__ is the 
+      object prototype. every function in JS gets 
+      a prototype that is different. 
