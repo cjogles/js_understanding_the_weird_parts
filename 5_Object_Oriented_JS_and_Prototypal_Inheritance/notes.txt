@@ -1,0 +1,24 @@
+Classical vs prototypal inhertiance:
+    - inheritance just means when one object gets 
+      access to the properties and methods of another 
+      object! 
+    - classical inheritance is in c#, Java etc. for 
+      a long time. its not bad. It works! but its not the 
+      only approach. Its verbose. friend, protected,
+      private, interface are all terms with it.
+    - prototypal isn't perfect either, but its simple,
+      extensible and easy to understand. 
+
+Understanding the prototype:
+    - JS implements prototypal inheritance. 
+    - All objects have a reference to a prototype 
+      property. The property is a reference to another 
+      object. Proto can have its own proto. all the 
+      way down to the base Object, the base Function 
+      object, or the base Array etc. its called 
+      the prototype chain. 
+
+Reflection:
+    - just means an object can look at itself, 
+      listing and changing its properties and methods.
+    
