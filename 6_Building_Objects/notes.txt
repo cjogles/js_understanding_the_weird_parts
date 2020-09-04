@@ -20,3 +20,6 @@ Dangerous aside with the new keyword:
     - just make sure to use the new keyword and 
       remember it by using capitalized names 
       for the function constructor. 
+
+Built in Function Constructors:
+    - see app.js
