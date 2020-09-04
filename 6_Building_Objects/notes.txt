@@ -15,3 +15,8 @@ How do we set up the protoype?
       is not the prototype of the object!__proto__ is the 
       object prototype. every function in JS gets 
       a prototype that is different. 
+
+Dangerous aside with the new keyword:
+    - just make sure to use the new keyword and 
+      remember it by using capitalized names 
+      for the function constructor. 
