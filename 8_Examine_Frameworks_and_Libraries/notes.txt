@@ -1,1 +1,13 @@
 Examine Framework
+
+jquery:
+    - just makes it easier to write code and deals 
+      with cross browser issues. 
+    - manipulates the DOM really well for you. 
+    - uses IIFE's to run the library
+    - jquery uses sizzle a css selector library inside 
+      the jqueyr library to run the code. a IIFE within 
+      an IIFE!
+    - method chaining happens when you return 'this' 
+      in each method.
+    - 
